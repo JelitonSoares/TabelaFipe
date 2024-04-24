@@ -1,4 +1,4 @@
-package br.com.jeli.fipeveiculos.service;
+package br.com.jeli.fipeveiculos.service.consumo;
 
 import java.io.IOException;
 import java.net.URI;
