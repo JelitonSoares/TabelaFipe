@@ -16,7 +16,6 @@ public class FipeveiculosApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println("*******RUNNING*******");
 
-
-		new Principal().exibirMenu();
+		Principal.exibirMenu();
 	}
 }
