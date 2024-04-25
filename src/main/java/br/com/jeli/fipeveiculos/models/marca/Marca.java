@@ -1,8 +1,14 @@
-package br.com.jeli.fipeveiculos.models;
+package br.com.jeli.fipeveiculos.models.marca;
+
+import br.com.jeli.fipeveiculos.models.marca.DadosMarca;
+import br.com.jeli.fipeveiculos.models.modelo.DadosModelo;
+
+import java.util.List;
 
 public class Marca {
     private Integer codigo;
     private String nome;
+    private List<DadosModelo> modelos;
 
     public Marca(DadosMarca dadosMarca) {
         try{
@@ -11,6 +17,7 @@ public class Marca {
             this.codigo = 0;
         }
         this.nome = dadosMarca.nome();
+        this.modelos = dadosMarca.modelos();
     }
 
     public Integer getCodigo() {
@@ -19,6 +26,10 @@ public class Marca {
 
     public String getNome() {
         return nome;
+    }
+
+    public List<DadosModelo> getModelos() {
+        return modelos;
     }
 
     @Override
