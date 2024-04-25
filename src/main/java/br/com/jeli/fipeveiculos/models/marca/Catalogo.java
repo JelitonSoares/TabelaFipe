@@ -1,4 +1,4 @@
-package br.com.jeli.fipeveiculos.models;
+package br.com.jeli.fipeveiculos.models.marca;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
